@@ -11,11 +11,12 @@ def main():
     # Circle = 1
     # Rectangle = 2
     # Triangle = 3
-    
     # TODO: Using one print statement, use string concatenation to print the options only 
     # as a single string (make sure to add a space between each option)
 
-    print(f'circle' + ' ' + 'rectangle' + ' ' + 'triangle')
+    options = "Circle = 1 Rectangle = 2 Triangle = 3"
+    print(options)
+
     # TODO: In terminal, ask the user "Select a shape by entering 1, 2, or 3' and assign the input to a new variable named 'choice'.
     choice = input("Select a shape by entering 1, 2, or 3")
     # TODO: Convert the variable 'choice' to an integer data type.
@@ -49,22 +50,21 @@ def main():
     elif choice == 3: #DO NOT REMOVE THE 'ELIF'
         # Calculate the area of a triangle
         # TODO: Assign new variables 'base' and 'height' and ask for the user's input for the base length and height of the triangle.
-        base = input("enter the base length of the triangle")
-        height = input("enter the height of the triangle")
+        base = float(input("enter the base length of the triangle"))
+        height = float(input("enter the height of the triangle"))
         # TODO: Convert both 'base' and 'height' to float.
-        base = float(base)
-        height = float(height)
         # TODO: Assign a new variable 'area' and implement the logic to calculate the area of a triangle.
         # HINT: The formula to find the area of a Triangle: half times base times height
         area = 0.5 * base * height
 
     else:
-        print("Invalid choice")
+
         # TODO: If the user enters anything other than 1, 2 or 3, print statement "Invalid choice ."
+        print("Invalid choice .")
     if choice in [1, 2, 3]: # DO NOT MODIFY
         print(f"The area is: {area:.2f} square units.") # DO NOT MODIFY
 
     # TODO: Print a statement explaining each step required to find and complete your technical assignments.  Be specific. 
 
 if __name__ == "__main__": # DO NOT MODIFY
-    main() # DO NOT MODIFY
+    main() # DO NOT MODIFYs
